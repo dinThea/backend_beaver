@@ -1,0 +1,102 @@
+{
+    "color": "01",
+    "started_at": "timestamp",
+    "progress": 0,
+    "stages": [
+        {
+            "name": "pesagem",
+            "completed": false,
+            "variables": [
+                {
+                    "name": "peso",
+                    "value": null,
+                    "unit": "kg"
+                }
+            ]
+        },
+        {
+            "name": "mistura",
+            "completed": false,
+            "variables": [
+                {
+                    "name": "inergia",
+                    "value": null,
+                    "unit": "sec"
+                },
+                {
+                    "name": "termometro",
+                    "value": null,
+                    "unit": "°"
+                },
+                {
+                    "name": "pressostato",
+                    "value": null,
+                    "unit": "Pa"
+                },
+                {
+                    "name": "fluxo",
+                    "value": null,
+                    "unit": "m³/s"
+                }
+            ]
+        },
+        {
+            "name": "calandragem",
+            "completed": false,
+            "variables": [
+            ]
+        },
+        {
+            "name": "prensagem",
+            "completed": false,
+            "variables": [
+                {
+                    "name": "pressostato",
+                    "value": null,
+                    "unit": "Pa"
+                }
+            ]
+        },
+        {
+            "name": "secagem",
+            "completed": false,
+            "variables": []
+        },
+        {
+            "name": "inspeção",
+            "completed": false,
+            "variables": [
+                {
+                    "name": "resitencia",
+                    "value": null,
+                    "unit": "N"
+                },
+                {
+                    "name": "diametro",
+                    "value": null,
+                    "unit": "cm"
+                },
+                {
+                    "name": "reposição",
+                    "value": null,
+                    "unit": "un"
+                },
+                {
+                    "name": "comprimento",
+                    "value": null,
+                    "unit": "cm"
+                },
+                {
+                    "name": "flacking",
+                    "value": null,
+                    "unit": "un"
+                },
+                {
+                    "umidade": "umidade",
+                    "value": null,
+                    "unit": "ppa"
+                }
+            ]
+        }
+    ]
+}
