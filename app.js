@@ -36,6 +36,44 @@ app.ws('/ws', (ws, req) => {
 
 })
 
+app.get('/lotes/csv', async (req, res) => {
+
+    // const collection = req.app.locals.collection
+    collection.find({}).toArray(async (err, result) => {
+        if (err) {
+            console.log(err)
+            res.status(400).send('not possible')
+        } else {
+            keys = ['_id', 'color', 'start', 'lote - ligante', 'peso - ligante', 'umidade - ligante KF', 'viscosidade - ligante', 'lote - carga', 'peso - carga', 'umidade - carga KF', 'absorção - carga OL', 'granulometria - carga', 'ph - carga', 'densidade - carga aparente', 'granulometria - carga', 'lote - cera', 'peso - cera', 'indice - cera de Iodo', 'indice - cera de saponificação', 'DSC - cera', 'lote - carga', 'peso - carga', 'cinzas - carga', 'umidade - carga KF', 'acidez - carga livre', 'granulometria - carga', 'DSC - carga', 'lote - pigmento', 'peso - pigmento', 'granulometria - pigmento', 'volume de água','temperatura','tempo de mistura','pressão da massa', 'espessura da massa', 'pressão do vácuo','pressão da massa','diâmetro da mina', 'lote pai','tempo','temperatura','umidade relativa', 'resitência','diâmetro','deposição','comprimento','flacking','rubout']
+            csv = ''
+            for (const key of keys) {
+                csv+=key+';'
+            }
+            csv.slice(0, -1)
+            csv+='\n'
+            for (const val of result) {
+                csv+=val._id+';'
+                csv+=val.color+';'
+                csv+=val.started_at
+                for (const stage of val.stages) {
+                    for (const variable in stage.variables) {
+                        if (stage.variables[variable].value) {
+                            csv+=';'
+                            console.log(stage.variables[variable])
+                            csv+=stage.variables[variable].value
+                        }
+                    }
+                } 
+                csv+='\n'
+            }
+            var text={'lotes.csv':csv}
+            res.set({"Content-Disposition":"attachment; filename=\"lotes.csv\""})
+            res.send(text['lotes.csv'])
+        }
+    })
+
+})
+
 app.post('/lotes/', async (req, res) => {
     
     let element = req.body

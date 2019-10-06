@@ -3,16 +3,173 @@
         "color": "01",
         "started_at": "2019-10-03 15:23:44",
         "progress": 0.0,
-        "forecast": 24,
+        "forecast": 36,
         "stages": [
             {
                 "name": "pesagem",
                 "completed": true,
                 "variables": [
                     {
+                        "name": "lote",
+                        "parent": "ligante", 
+                        "value": "1HFG",
+                        "unit": ""
+                    },
+                    {
                         "name": "peso",
-                        "value": 1200,
+                        "parent": "ligante", 
+                        "value": 20,
                         "unit": "kg"
+                    },
+                    {
+                        "name": "umidade KF",
+                        "parent": "ligante", 
+                        "value": 1,
+                        "unit": "%"
+                    },
+                    {
+                        "name": "viscosidade",
+                        "parent": "ligante", 
+                        "value": 3500,
+                        "unit": "CPS"
+                    },
+                    {
+                        "name": "lote",
+                        "parent": "carga 1", 
+                        "value": "234FD",
+                        "unit": ""
+                    },
+                    {
+                        "name": "peso",
+                        "parent": "carga 1", 
+                        "value": 100,
+                        "unit": "kg"
+                    },
+                    {
+                        "name": "umidade KF",
+                        "parent": "carga 1", 
+                        "value": 1,
+                        "unit": "%"
+                    },
+                    {
+                        "name": "absorção OL",
+                        "parent": "carga 1", 
+                        "value": 42,
+                        "unit": "%"
+                    },
+                    {
+                        "name": "granulometria",
+                        "parent": "carga 1", 
+                        "value": 11,
+                        "unit": "um"
+                    },
+                    {
+                        "name": "ph",
+                        "parent": "carga 1", 
+                        "value": 7,
+                        "unit": ""
+                    },
+                    {
+                        "name": "densidade aparente",
+                        "parent": "carga 1", 
+                        "value": 3,
+                        "unit": "g/mL"
+                    },
+                    {
+                        "name": "granulometria",
+                        "parent": "carga 1", 
+                        "value": 11,
+                        "unit": "um"
+                    },
+                    {
+                        "name": "lote",
+                        "parent": "cera", 
+                        "value": "45SDFS",
+                        "unit": ""
+                    },
+                    {
+                        "name": "peso",
+                        "parent": "cera", 
+                        "value": 50,
+                        "unit": "kg"
+                    },
+                    {
+                        "name": "indice de Iodo",
+                        "parent": "cera", 
+                        "value": 1,
+                        "unit": "gi"
+                    },
+                    {
+                        "name": "indice de saponificação",
+                        "parent": "cera", 
+                        "value": 195,
+                        "unit": "mg/g"
+                    },
+                    {
+                        "name": "DSC",
+                        "parent": "cera", 
+                        "value": 62,
+                        "unit": "°C"
+                    },
+                    {
+                        "name": "lote",
+                        "parent": "carga - 2", 
+                        "value": "345ASD",
+                        "unit": ""
+                    },
+                    {
+                        "name": "peso",
+                        "parent": "carga - 2", 
+                        "value": 20,
+                        "unit": "kg"
+                    },
+                    {
+                        "name": "cinzas",
+                        "parent": "carga - 2", 
+                        "value": 10,
+                        "unit": "%"
+                    },
+                    {
+                        "name": "umidade KF",
+                        "parent": "carga - 2", 
+                        "value": 1,
+                        "unit": "%"
+                    },
+                    {
+                        "name": "acidez livre",
+                        "parent": "carga - 2", 
+                        "value": 1,
+                        "unit": "%"
+                    },
+                    {
+                        "name": "granulometria",
+                        "parent": "carga - 2", 
+                        "value": 11,
+                        "unit": "um"
+                    },
+                    {
+                        "name": "DSC",
+                        "parent": "carga - 2", 
+                        "value": 62,
+                        "unit": "°C"
+                    },
+                    {
+                        "name": "lote",
+                        "parent": "pigmento", 
+                        "value": "345ASD",
+                        "unit": ""
+                    },
+                    {
+                        "name": "peso",
+                        "parent": "pigmento", 
+                        "value": 30,
+                        "unit": "kg"
+                    },
+                    {
+                        "name": "granulometria",
+                        "parent": "pigmento", 
+                        "value": 10,
+                        "unit": "um"
                     }
                 ]
             },
@@ -21,1203 +178,118 @@
                 "completed": false,
                 "variables": [
                     {
-                        "name": "inergia",
-                        "value": 350,
-                        "unit": "sec"
+                        "name": "volume de água",
+                        "value": 20,
+                        "unit": "L"
                     },
                     {
-                        "name": "termometro",
-                        "value": 120,
+                        "name": "temperatura",
+                        "value": 60,
                         "unit": "°C"
                     },
                     {
-                        "name": "pressostato",
-                        "value": 1200,
-                        "unit": "Pa"
+                        "name": "tempo de mistura",
+                        "value": 30,
+                        "unit": "min"
                     },
                     {
-                        "name": "fluxo",
-                        "value": 12,
-                        "unit": "m³/s"
+                        "name": "pressão da massa",
+                        "value": 10,
+                        "unit": "kg/cm²"
                     }
                 ]
             },
             {
                 "name": "calandragem",
                 "completed": false,
-                "variables": []
+                "variables": [
+                    {
+                        "name": "espessura da massa",
+                        "value": 1,
+                        "unit": "mm"
+                    }
+                ]
             },
             {
                 "name": "prensagem",
                 "completed": false,
                 "variables": [
                     {
-                        "name": "pressostato",
-                        "value": 1200,
-                        "unit": "Pa"
+                        "name": "pressão do vácuo",
+                        "value": 700,
+                        "unit": "mmHg"
+                    },
+                    {
+                        "name": "pressão da massa",
+                        "value": 10,
+                        "unit": "kg/cm²"
+                    },
+                    {
+                        "name": "diâmetro da mina",
+                        "value": 3.4,
+                        "unit": "mm"
                     }
                 ]
             },
             {
                 "name": "secagem",
                 "completed": false,
-                "variables": []
-            },
-            {
-                "name": "inspeção",
-                "completed": false,
                 "variables": [
                     {
-                        "name": "resitencia",
-                        "value": 120,
-                        "unit": "N"
+                        "name": "lote pai",
+                        "value": "5d967b11cb2ae53c65c77d45",
+                        "unit": ""
                     },
                     {
-                        "name": "diametro",
-                        "value": 2,
-                        "unit": "cm"
+                        "name": "tempo",
+                        "value": 20,
+                        "unit": "horas"
                     },
                     {
-                        "name": "reposição",
-                        "value": 5,
-                        "unit": "un"
-                    },
-                    {
-                        "name": "comprimento",
-                        "value": 10,
-                        "unit": "cm"
-                    },
-                    {
-                        "name": "flacking",
-                        "value": 12,
-                        "unit": "un"
-                    },
-                    {
-                        "name": "umidade",
-                        "value": 122,
-                        "unit": "ppa"
-                    }
-                ]
-            }
-        ]
-    },
-    {
-        "color": "07",
-        "started_at": "2019-10-03 15:23:44",
-        "progress": 0.0,
-        "forecast": 24,
-        "stages": [
-            {
-                "name": "pesagem",
-                "completed": true,
-                "variables": [
-                    {
-                        "name": "peso",
-                        "value": 1200,
-                        "unit": "kg"
-                    }
-                ]
-            },
-            {
-                "name": "mistura",
-                "completed": false,
-                "variables": [
-                    {
-                        "name": "inergia",
-                        "value": 350,
-                        "unit": "sec"
-                    },
-                    {
-                        "name": "termometro",
-                        "value": 120,
+                        "name": "temperatura",
+                        "value": 50,
                         "unit": "°C"
                     },
                     {
-                        "name": "pressostato",
-                        "value": 1200,
-                        "unit": "Pa"
-                    },
-                    {
-                        "name": "fluxo",
-                        "value": 12,
-                        "unit": "m³/s"
+                        "name": "umidade relativa",
+                        "value": 50,
+                        "unit": "%"
                     }
                 ]
-            },
-            {
-                "name": "calandragem",
-                "completed": false,
-                "variables": []
-            },
-            {
-                "name": "prensagem",
-                "completed": false,
-                "variables": [
-                    {
-                        "name": "pressostato",
-                        "value": 1200,
-                        "unit": "Pa"
-                    }
-                ]
-            },
-            {
-                "name": "secagem",
-                "completed": false,
-                "variables": []
             },
             {
                 "name": "inspeção",
                 "completed": false,
                 "variables": [
                     {
-                        "name": "resitencia",
-                        "value": 120,
-                        "unit": "N"
+                        "name": "resitência",
+                        "value": 2.33,
+                        "unit": "kgf/cm²"
                     },
                     {
-                        "name": "diametro",
-                        "value": 2,
-                        "unit": "cm"
+                        "name": "diâmetro",
+                        "value": 3.34,
+                        "unit": "mm"
                     },
                     {
-                        "name": "reposição",
-                        "value": 5,
-                        "unit": "un"
-                    },
-                    {
-                        "name": "comprimento",
-                        "value": 10,
-                        "unit": "cm"
-                    },
-                    {
-                        "name": "flacking",
-                        "value": 12,
-                        "unit": "un"
-                    },
-                    {
-                        "name": "umidade",
-                        "value": 122,
-                        "unit": "ppa"
-                    }
-                ]
-            }
-        ]
-    },
-    {
-        "color": "13",
-        "started_at": "2019-10-03 15:23:44",
-        "progress": 0.0,
-        "forecast": 24,
-        "stages": [
-            {
-                "name": "pesagem",
-                "completed": true,
-                "variables": [
-                    {
-                        "name": "peso",
-                        "value": 1200,
-                        "unit": "kg"
-                    }
-                ]
-            },
-            {
-                "name": "mistura",
-                "completed": false,
-                "variables": [
-                    {
-                        "name": "inergia",
-                        "value": 350,
-                        "unit": "sec"
-                    },
-                    {
-                        "name": "termometro",
-                        "value": 120,
-                        "unit": "°C"
-                    },
-                    {
-                        "name": "pressostato",
-                        "value": 1200,
-                        "unit": "Pa"
-                    },
-                    {
-                        "name": "fluxo",
-                        "value": 12,
-                        "unit": "m³/s"
-                    }
-                ]
-            },
-            {
-                "name": "calandragem",
-                "completed": false,
-                "variables": []
-            },
-            {
-                "name": "prensagem",
-                "completed": false,
-                "variables": [
-                    {
-                        "name": "pressostato",
-                        "value": 1200,
-                        "unit": "Pa"
-                    }
-                ]
-            },
-            {
-                "name": "secagem",
-                "completed": false,
-                "variables": []
-            },
-            {
-                "name": "inspeção",
-                "completed": false,
-                "variables": [
-                    {
-                        "name": "resitencia",
-                        "value": 120,
-                        "unit": "N"
-                    },
-                    {
-                        "name": "diametro",
-                        "value": 2,
-                        "unit": "cm"
-                    },
-                    {
-                        "name": "reposição",
-                        "value": 5,
-                        "unit": "un"
+                        "name": "deposição",
+                        "value": "aprovado",
+                        "unit": ""
                     },
                     {
                         "name": "comprimento",
-                        "value": 10,
-                        "unit": "cm"
+                        "value": 183,
+                        "unit": "mm"
                     },
                     {
                         "name": "flacking",
-                        "value": 12,
-                        "unit": "un"
+                        "value": "aprovado",
+                        "unit": ""
                     },
                     {
-                        "name": "umidade",
-                        "value": 122,
-                        "unit": "ppa"
-                    }
-                ]
-            }
-        ]
-    },
-    {
-        "color": "17",
-        "started_at": "2019-10-03 15:23:44",
-        "progress": 0.0,
-        "forecast": 24,
-        "stages": [
-            {
-                "name": "pesagem",
-                "completed": true,
-                "variables": [
-                    {
-                        "name": "peso",
-                        "value": 1200,
-                        "unit": "kg"
-                    }
-                ]
-            },
-            {
-                "name": "mistura",
-                "completed": false,
-                "variables": [
-                    {
-                        "name": "inergia",
-                        "value": 350,
-                        "unit": "sec"
-                    },
-                    {
-                        "name": "termometro",
-                        "value": 120,
-                        "unit": "°C"
-                    },
-                    {
-                        "name": "pressostato",
-                        "value": 1200,
-                        "unit": "Pa"
-                    },
-                    {
-                        "name": "fluxo",
-                        "value": 12,
-                        "unit": "m³/s"
-                    }
-                ]
-            },
-            {
-                "name": "calandragem",
-                "completed": false,
-                "variables": []
-            },
-            {
-                "name": "prensagem",
-                "completed": false,
-                "variables": [
-                    {
-                        "name": "pressostato",
-                        "value": 1200,
-                        "unit": "Pa"
-                    }
-                ]
-            },
-            {
-                "name": "secagem",
-                "completed": false,
-                "variables": []
-            },
-            {
-                "name": "inspeção",
-                "completed": false,
-                "variables": [
-                    {
-                        "name": "resitencia",
-                        "value": 120,
-                        "unit": "N"
-                    },
-                    {
-                        "name": "diametro",
-                        "value": 2,
-                        "unit": "cm"
-                    },
-                    {
-                        "name": "reposição",
-                        "value": 5,
-                        "unit": "un"
-                    },
-                    {
-                        "name": "comprimento",
-                        "value": 10,
-                        "unit": "cm"
-                    },
-                    {
-                        "name": "flacking",
-                        "value": 12,
-                        "unit": "un"
-                    },
-                    {
-                        "name": "umidade",
-                        "value": 122,
-                        "unit": "ppa"
-                    }
-                ]
-            }
-        ]
-    },
-    {
-        "color": "21",
-        "started_at": "2019-10-03 15:23:44",
-        "progress": 0.0,
-        "forecast": 24,
-        "stages": [
-            {
-                "name": "pesagem",
-                "completed": true,
-                "variables": [
-                    {
-                        "name": "peso",
-                        "value": 1200,
-                        "unit": "kg"
-                    }
-                ]
-            },
-            {
-                "name": "mistura",
-                "completed": false,
-                "variables": [
-                    {
-                        "name": "inergia",
-                        "value": 350,
-                        "unit": "sec"
-                    },
-                    {
-                        "name": "termometro",
-                        "value": 120,
-                        "unit": "°C"
-                    },
-                    {
-                        "name": "pressostato",
-                        "value": 1200,
-                        "unit": "Pa"
-                    },
-                    {
-                        "name": "fluxo",
-                        "value": 12,
-                        "unit": "m³/s"
-                    }
-                ]
-            },
-            {
-                "name": "calandragem",
-                "completed": false,
-                "variables": []
-            },
-            {
-                "name": "prensagem",
-                "completed": false,
-                "variables": [
-                    {
-                        "name": "pressostato",
-                        "value": 1200,
-                        "unit": "Pa"
-                    }
-                ]
-            },
-            {
-                "name": "secagem",
-                "completed": false,
-                "variables": []
-            },
-            {
-                "name": "inspeção",
-                "completed": false,
-                "variables": [
-                    {
-                        "name": "resitencia",
-                        "value": 120,
-                        "unit": "N"
-                    },
-                    {
-                        "name": "diametro",
-                        "value": 2,
-                        "unit": "cm"
-                    },
-                    {
-                        "name": "reposição",
-                        "value": 5,
-                        "unit": "un"
-                    },
-                    {
-                        "name": "comprimento",
-                        "value": 10,
-                        "unit": "cm"
-                    },
-                    {
-                        "name": "flacking",
-                        "value": 12,
-                        "unit": "un"
-                    },
-                    {
-                        "name": "umidade",
-                        "value": 122,
-                        "unit": "ppa"
-                    }
-                ]
-            }
-        ]
-    },
-    {
-        "color": "27",
-        "started_at": "2019-10-03 15:23:44",
-        "progress": 0.0,
-        "forecast": 24,
-        "stages": [
-            {
-                "name": "pesagem",
-                "completed": true,
-                "variables": [
-                    {
-                        "name": "peso",
-                        "value": 1200,
-                        "unit": "kg"
-                    }
-                ]
-            },
-            {
-                "name": "mistura",
-                "completed": false,
-                "variables": [
-                    {
-                        "name": "inergia",
-                        "value": 350,
-                        "unit": "sec"
-                    },
-                    {
-                        "name": "termometro",
-                        "value": 120,
-                        "unit": "°C"
-                    },
-                    {
-                        "name": "pressostato",
-                        "value": 1200,
-                        "unit": "Pa"
-                    },
-                    {
-                        "name": "fluxo",
-                        "value": 12,
-                        "unit": "m³/s"
-                    }
-                ]
-            },
-            {
-                "name": "calandragem",
-                "completed": false,
-                "variables": []
-            },
-            {
-                "name": "prensagem",
-                "completed": false,
-                "variables": [
-                    {
-                        "name": "pressostato",
-                        "value": 1200,
-                        "unit": "Pa"
-                    }
-                ]
-            },
-            {
-                "name": "secagem",
-                "completed": false,
-                "variables": []
-            },
-            {
-                "name": "inspeção",
-                "completed": false,
-                "variables": [
-                    {
-                        "name": "resitencia",
-                        "value": 120,
-                        "unit": "N"
-                    },
-                    {
-                        "name": "diametro",
-                        "value": 2,
-                        "unit": "cm"
-                    },
-                    {
-                        "name": "reposição",
-                        "value": 5,
-                        "unit": "un"
-                    },
-                    {
-                        "name": "comprimento",
-                        "value": 10,
-                        "unit": "cm"
-                    },
-                    {
-                        "name": "flacking",
-                        "value": 12,
-                        "unit": "un"
-                    },
-                    {
-                        "name": "umidade",
-                        "value": 122,
-                        "unit": "ppa"
-                    }
-                ]
-            }
-        ]
-    },
-    {
-        "color": "43",
-        "started_at": "2019-10-03 15:23:44",
-        "progress": 0.0,
-        "forecast": 24,
-        "stages": [
-            {
-                "name": "pesagem",
-                "completed": true,
-                "variables": [
-                    {
-                        "name": "peso",
-                        "value": 1200,
-                        "unit": "kg"
-                    }
-                ]
-            },
-            {
-                "name": "mistura",
-                "completed": false,
-                "variables": [
-                    {
-                        "name": "inergia",
-                        "value": 350,
-                        "unit": "sec"
-                    },
-                    {
-                        "name": "termometro",
-                        "value": 120,
-                        "unit": "°C"
-                    },
-                    {
-                        "name": "pressostato",
-                        "value": 1200,
-                        "unit": "Pa"
-                    },
-                    {
-                        "name": "fluxo",
-                        "value": 12,
-                        "unit": "m³/s"
-                    }
-                ]
-            },
-            {
-                "name": "calandragem",
-                "completed": false,
-                "variables": []
-            },
-            {
-                "name": "prensagem",
-                "completed": false,
-                "variables": [
-                    {
-                        "name": "pressostato",
-                        "value": 1200,
-                        "unit": "Pa"
-                    }
-                ]
-            },
-            {
-                "name": "secagem",
-                "completed": false,
-                "variables": []
-            },
-            {
-                "name": "inspeção",
-                "completed": false,
-                "variables": [
-                    {
-                        "name": "resitencia",
-                        "value": 120,
-                        "unit": "N"
-                    },
-                    {
-                        "name": "diametro",
-                        "value": 2,
-                        "unit": "cm"
-                    },
-                    {
-                        "name": "reposição",
-                        "value": 5,
-                        "unit": "un"
-                    },
-                    {
-                        "name": "comprimento",
-                        "value": 10,
-                        "unit": "cm"
-                    },
-                    {
-                        "name": "flacking",
-                        "value": 12,
-                        "unit": "un"
-                    },
-                    {
-                        "name": "umidade",
-                        "value": 122,
-                        "unit": "ppa"
-                    }
-                ]
-            }
-        ]
-    },
-    {
-        "color": "47",
-        "started_at": "2019-10-03 15:23:44",
-        "progress": 0.0,
-        "forecast": 24,
-        "stages": [
-            {
-                "name": "pesagem",
-                "completed": true,
-                "variables": [
-                    {
-                        "name": "peso",
-                        "value": 1200,
-                        "unit": "kg"
-                    }
-                ]
-            },
-            {
-                "name": "mistura",
-                "completed": false,
-                "variables": [
-                    {
-                        "name": "inergia",
-                        "value": 350,
-                        "unit": "sec"
-                    },
-                    {
-                        "name": "termometro",
-                        "value": 120,
-                        "unit": "°C"
-                    },
-                    {
-                        "name": "pressostato",
-                        "value": 1200,
-                        "unit": "Pa"
-                    },
-                    {
-                        "name": "fluxo",
-                        "value": 12,
-                        "unit": "m³/s"
-                    }
-                ]
-            },
-            {
-                "name": "calandragem",
-                "completed": false,
-                "variables": []
-            },
-            {
-                "name": "prensagem",
-                "completed": false,
-                "variables": [
-                    {
-                        "name": "pressostato",
-                        "value": 1200,
-                        "unit": "Pa"
-                    }
-                ]
-            },
-            {
-                "name": "secagem",
-                "completed": false,
-                "variables": []
-            },
-            {
-                "name": "inspeção",
-                "completed": false,
-                "variables": [
-                    {
-                        "name": "resitencia",
-                        "value": 120,
-                        "unit": "N"
-                    },
-                    {
-                        "name": "diametro",
-                        "value": 2,
-                        "unit": "cm"
-                    },
-                    {
-                        "name": "reposição",
-                        "value": 5,
-                        "unit": "un"
-                    },
-                    {
-                        "name": "comprimento",
-                        "value": 10,
-                        "unit": "cm"
-                    },
-                    {
-                        "name": "flacking",
-                        "value": 12,
-                        "unit": "un"
-                    },
-                    {
-                        "name": "umidade",
-                        "value": 122,
-                        "unit": "ppa"
-                    }
-                ]
-            }
-        ]
-    },
-    {
-        "color": "63",
-        "started_at": "2019-10-03 15:23:44",
-        "progress": 0.0,
-        "forecast": 24,
-        "stages": [
-            {
-                "name": "pesagem",
-                "completed": true,
-                "variables": [
-                    {
-                        "name": "peso",
-                        "value": 1200,
-                        "unit": "kg"
-                    }
-                ]
-            },
-            {
-                "name": "mistura",
-                "completed": false,
-                "variables": [
-                    {
-                        "name": "inergia",
-                        "value": 350,
-                        "unit": "sec"
-                    },
-                    {
-                        "name": "termometro",
-                        "value": 120,
-                        "unit": "°C"
-                    },
-                    {
-                        "name": "pressostato",
-                        "value": 1200,
-                        "unit": "Pa"
-                    },
-                    {
-                        "name": "fluxo",
-                        "value": 12,
-                        "unit": "m³/s"
-                    }
-                ]
-            },
-            {
-                "name": "calandragem",
-                "completed": false,
-                "variables": []
-            },
-            {
-                "name": "prensagem",
-                "completed": false,
-                "variables": [
-                    {
-                        "name": "pressostato",
-                        "value": 1200,
-                        "unit": "Pa"
-                    }
-                ]
-            },
-            {
-                "name": "secagem",
-                "completed": false,
-                "variables": []
-            },
-            {
-                "name": "inspeção",
-                "completed": false,
-                "variables": [
-                    {
-                        "name": "resitencia",
-                        "value": 120,
-                        "unit": "N"
-                    },
-                    {
-                        "name": "diametro",
-                        "value": 2,
-                        "unit": "cm"
-                    },
-                    {
-                        "name": "reposição",
-                        "value": 5,
-                        "unit": "un"
-                    },
-                    {
-                        "name": "comprimento",
-                        "value": 10,
-                        "unit": "cm"
-                    },
-                    {
-                        "name": "flacking",
-                        "value": 12,
-                        "unit": "un"
-                    },
-                    {
-                        "name": "umidade",
-                        "value": 122,
-                        "unit": "ppa"
-                    }
-                ]
-            }
-        ]
-    },
-    {
-        "color": "70",
-        "started_at": "2019-10-03 15:23:44",
-        "progress": 0.0,
-        "forecast": 24,
-        "stages": [
-            {
-                "name": "pesagem",
-                "completed": true,
-                "variables": [
-                    {
-                        "name": "peso",
-                        "value": 1200,
-                        "unit": "kg"
-                    }
-                ]
-            },
-            {
-                "name": "mistura",
-                "completed": false,
-                "variables": [
-                    {
-                        "name": "inergia",
-                        "value": 350,
-                        "unit": "sec"
-                    },
-                    {
-                        "name": "termometro",
-                        "value": 120,
-                        "unit": "°C"
-                    },
-                    {
-                        "name": "pressostato",
-                        "value": 1200,
-                        "unit": "Pa"
-                    },
-                    {
-                        "name": "fluxo",
-                        "value": 12,
-                        "unit": "m³/s"
-                    }
-                ]
-            },
-            {
-                "name": "calandragem",
-                "completed": false,
-                "variables": []
-            },
-            {
-                "name": "prensagem",
-                "completed": false,
-                "variables": [
-                    {
-                        "name": "pressostato",
-                        "value": 1200,
-                        "unit": "Pa"
-                    }
-                ]
-            },
-            {
-                "name": "secagem",
-                "completed": false,
-                "variables": []
-            },
-            {
-                "name": "inspeção",
-                "completed": false,
-                "variables": [
-                    {
-                        "name": "resitencia",
-                        "value": 120,
-                        "unit": "N"
-                    },
-                    {
-                        "name": "diametro",
-                        "value": 2,
-                        "unit": "cm"
-                    },
-                    {
-                        "name": "reposição",
-                        "value": 5,
-                        "unit": "un"
-                    },
-                    {
-                        "name": "comprimento",
-                        "value": 10,
-                        "unit": "cm"
-                    },
-                    {
-                        "name": "flacking",
-                        "value": 12,
-                        "unit": "un"
-                    },
-                    {
-                        "name": "umidade",
-                        "value": 122,
-                        "unit": "ppa"
-                    }
-                ]
-            }
-        ]
-    },
-    {
-        "color": "76",
-        "started_at": "2019-10-03 15:23:44",
-        "progress": 0.0,
-        "forecast": 24,
-        "stages": [
-            {
-                "name": "pesagem",
-                "completed": true,
-                "variables": [
-                    {
-                        "name": "peso",
-                        "value": 1200,
-                        "unit": "kg"
-                    }
-                ]
-            },
-            {
-                "name": "mistura",
-                "completed": false,
-                "variables": [
-                    {
-                        "name": "inergia",
-                        "value": 350,
-                        "unit": "sec"
-                    },
-                    {
-                        "name": "termometro",
-                        "value": 120,
-                        "unit": "°C"
-                    },
-                    {
-                        "name": "pressostato",
-                        "value": 1200,
-                        "unit": "Pa"
-                    },
-                    {
-                        "name": "fluxo",
-                        "value": 12,
-                        "unit": "m³/s"
-                    }
-                ]
-            },
-            {
-                "name": "calandragem",
-                "completed": false,
-                "variables": []
-            },
-            {
-                "name": "prensagem",
-                "completed": false,
-                "variables": [
-                    {
-                        "name": "pressostato",
-                        "value": 1200,
-                        "unit": "Pa"
-                    }
-                ]
-            },
-            {
-                "name": "secagem",
-                "completed": false,
-                "variables": []
-            },
-            {
-                "name": "inspeção",
-                "completed": false,
-                "variables": [
-                    {
-                        "name": "resitencia",
-                        "value": 120,
-                        "unit": "N"
-                    },
-                    {
-                        "name": "diametro",
-                        "value": 2,
-                        "unit": "cm"
-                    },
-                    {
-                        "name": "reposição",
-                        "value": 5,
-                        "unit": "un"
-                    },
-                    {
-                        "name": "comprimento",
-                        "value": 10,
-                        "unit": "cm"
-                    },
-                    {
-                        "name": "flacking",
-                        "value": 12,
-                        "unit": "un"
-                    },
-                    {
-                        "name": "umidade",
-                        "value": 122,
-                        "unit": "ppa"
-                    }
-                ]
-            }
-        ]
-    },
-    {
-        "color": "99",
-        "started_at": "2019-10-03 15:23:44",
-        "progress": 0.0,
-        "forecast": 24,
-        "stages": [
-            {
-                "name": "pesagem",
-                "completed": true,
-                "variables": [
-                    {
-                        "name": "peso",
-                        "value": 1200,
-                        "unit": "kg"
-                    }
-                ]
-            },
-            {
-                "name": "mistura",
-                "completed": false,
-                "variables": [
-                    {
-                        "name": "inergia",
-                        "value": 350,
-                        "unit": "sec"
-                    },
-                    {
-                        "name": "termometro",
-                        "value": 120,
-                        "unit": "°C"
-                    },
-                    {
-                        "name": "pressostato",
-                        "value": 1200,
-                        "unit": "Pa"
-                    },
-                    {
-                        "name": "fluxo",
-                        "value": 12,
-                        "unit": "m³/s"
-                    }
-                ]
-            },
-            {
-                "name": "calandragem",
-                "completed": false,
-                "variables": []
-            },
-            {
-                "name": "prensagem",
-                "completed": false,
-                "variables": [
-                    {
-                        "name": "pressostato",
-                        "value": 1200,
-                        "unit": "Pa"
-                    }
-                ]
-            },
-            {
-                "name": "secagem",
-                "completed": false,
-                "variables": []
-            },
-            {
-                "name": "inspeção",
-                "completed": false,
-                "variables": [
-                    {
-                        "name": "resitencia",
-                        "value": 120,
-                        "unit": "N"
-                    },
-                    {
-                        "name": "diametro",
-                        "value": 2,
-                        "unit": "cm"
-                    },
-                    {
-                        "name": "reposição",
-                        "value": 5,
-                        "unit": "un"
-                    },
-                    {
-                        "name": "comprimento",
-                        "value": 10,
-                        "unit": "cm"
-                    },
-                    {
-                        "name": "flacking",
-                        "value": 12,
-                        "unit": "un"
-                    },
-                    {
-                        "name": "umidade",
-                        "value": 122,
-                        "unit": "ppa"
+                        "name": "rubout",
+                        "value": "aprovado",
+                        "unit": ""
                     }
                 ]
             }
